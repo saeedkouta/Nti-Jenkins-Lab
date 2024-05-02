@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                  	
-                 		pushDockerImage("${dockerHubCredentialsID}", "${imageName}")
+                 		pushDockerImage("${dockerHubCredentialsID}", "${imageName}","${branch-name}")
                       
                 }
             }
