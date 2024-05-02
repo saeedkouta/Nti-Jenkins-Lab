@@ -6,7 +6,7 @@ pipeline {
         dockerHubCredentialsID	            = 'DockerHub'  		    			      // DockerHub credentials ID.
         imageName   		            = 'saeedkouta/nti-python-app'     			// DockerHub repo/image name.
 	    k8sCredentialsID	            = 'kubernetes'
-	    branch-name                     = 'Test'// KubeConfig credentials ID.    
+	    branch-name                     = 'test'// KubeConfig credentials ID.    
     }
     
     stages {       
