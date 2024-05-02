@@ -43,7 +43,7 @@ pipeline {
             steps {
                 script { 
                 	dir('k8s') {
-				         deployOnKubernetes("${k8sCredentialsID}","${brachname}")
+				         deployOnKubernetes("${k8sCredentialsID}","${branchname}")
                     }
                 }
             }
