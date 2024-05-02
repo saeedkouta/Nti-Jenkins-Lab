@@ -6,7 +6,7 @@ pipeline {
         dockerHubCredentialsID	            = 'DockerHub'  		    			      // DockerHub credentials ID.
         imageName   		            = 'saeedkouta/nti-python-app:test'     			// DockerHub repo/image name.
 	    k8sCredentialsID	            = 'kubernetes'
-	    branch-name                     = 'test'                                                          // KubeConfig credentials ID.    
+	    branchname                     = 'test'                                                          // KubeConfig credentials ID.    
     }
     
     stages {       
@@ -43,7 +43,7 @@ pipeline {
             steps {
                 script { 
                 	dir('k8s') {
-				         deployOnKubernetes("${k8sCredentialsID}","${branch-name}")
+				         deployOnKubernetes("${k8sCredentialsID}","${branchname}")
                     }
                 }
             }
