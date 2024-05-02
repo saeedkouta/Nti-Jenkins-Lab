@@ -4,7 +4,7 @@ pipeline {
     
     environment {
         dockerHubCredentialsID	            = 'DockerHub'  		    			      // DockerHub credentials ID.
-        imageName   		            = 'saeedkouta/nti-python-app:prod'     			// DockerHub repo/image name.
+        imageName   		            = 'saeedkouta/nti-python-app-prod'     			// DockerHub repo/image name.
 	    k8sCredentialsID	            = 'kubernetes'
 	    branchname                     = 'prod'// KubeConfig credentials ID.    
     }
